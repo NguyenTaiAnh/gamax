@@ -1,0 +1,1313 @@
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-xl-8: 20.8px;
+  --font-size-lg-5: 18.5px;
+  --font-size-mid: 17px;
+  --font-size-36xl-5: 55.5px;
+  --font-size-25xl: 44px;
+  --font-size-14xl: 33px;
+  --font-size-18xl: 37px;
+  --font-size-11xl: 30px;
+  --font-size-3xl: 22px;
+  --font-size-4xl-1: 23.1px;
+  --font-size-lg: 18px;
+  --font-size-8xl-7: 27.7px;
+  --font-size-43xl-4: 62.4px;
+  --font-size-31xl: 50px;
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+
+  /* Colors */
+  --color-gray-100: rgba(255, 255, 255, 0.7);
+  --cryptomatictemplate-webflow-io-home-pages-home-v2-1665x772-default-linear-shuttle-gray-cod-gray-linear-nero-nero: rgba(
+    255,
+    255,
+    255,
+    0.4
+  );
+  --color-gainsboro-100: #e6e6e6;
+  --color-gainsboro-200: rgba(230, 230, 230, 0.09);
+  --cryptomatictemplate-webflow-io-home-pages-home-v2-1665x772-default-nero: #fff;
+  --white-opacity-30: rgba(241, 251, 232, 0.3);
+  --color-darkgray: #afafaf;
+
+  /* Gaps */
+  --gap-3xl: 22px;
+  --gap-21xl: 40px;
+  --gap-xl: 20px;
+  --gap-28xl: 47px;
+  --gap-4xl: 23px;
+  --gap-lg: 18px;
+  --gap-3xs-2: 9.2px;
+  --gap-37xl: 56px;
+  --gap-9xl: 28px;
+  --gap-3xs: 10px;
+  --gap-27xl: 46px;
+  --gap-48xl: 67px;
+  --gap-14xl: 33px;
+  --gap-11xl: 30px;
+
+  /* Paddings */
+  --padding-40xl: 59px;
+  --padding-xl: 20px;
+  --padding-12xs: 1px;
+  --padding-mid: 17px;
+  --padding-37xl: 56px;
+  --padding-36xl-5: 55.5px;
+  --padding-27xl: 46px;
+  --padding-17xl: 36px;
+  --padding-4xl: 23px;
+  --padding-lg-5: 18.5px;
+  --padding-18xl: 37px;
+  --padding-4xl-1: 23.1px;
+  --padding-9xl: 28px;
+  --padding-8xl-7: 27.7px;
+  --padding-11xs: 2px;
+  --padding-44xl: 63px;
+  --padding-10xs: 3px;
+  --padding-5xl: 24px;
+  --padding-3xl: 22px;
+  --padding-sm: 14px;
+  --padding-smi: 13px;
+  --padding-xs: 12px;
+
+  /* Border radiuses */
+  --br-13xl-4: 32.4px;
+  --br-91xl-9: 110.9px;
+  --br-sm-9: 13.9px;
+  --br-1136xl-5: 1155.5px;
+  --br-8xl-7: 27.7px;
+  --br-5xl: 24px;
+}
+
+body {
+  background-color: black;
+  color: white !important;
+  margin: 0 !important;
+  font-family: Inter !important;
+  /* overflow-x: hidden; */
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.full-screen-element {
+  width: 100%;
+  height: 100%;
+}
+.container{
+  padding: 0 !important;
+}
+.gamax-icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 34.7px;
+  flex-shrink: 0;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1.2px solid
+    var(
+      --cryptomatictemplate-webflow-io-home-pages-home-v2-1665x772-default-linear-shuttle-gray-cod-gray-linear-nero-nero
+    );
+  padding: var(--padding-sm) var(--padding-3xl) var(--padding-smi)
+    var(--padding-9xl);
+  background-color: var(
+    --cryptomatictemplate-webflow-io-home-pages-home-v1-1665x772-default-linear-shuttle-gray-cod-gray
+  );
+  border-radius: 110.92px;
+  background: linear-gradient(107.26deg, #566070 15%, #060606);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: nowrap;
+}
+
+.collapse ul.navbar-nav > li > a {
+  color: var(
+    --cryptomatictemplate_webflow_io_home-pages_home-v1_1665x772_default-Nero,
+    #fff
+  );
+  font-family: Inter;
+  font-size: 20.798px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.664px;
+}
+
+.lang {
+  text-align: center;
+  /* font-family: Inter; */
+  font-size: 18.487px !important;
+  font-weight: 500 !important;
+  line-height: 20.798px;
+  color: #fff;
+}
+
+.offer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  margin: auto;
+  width: 100%;
+}
+
+.text-container {
+  z-index: 1;
+  /* Để text nằm trên ảnh */
+  padding: 20px;
+  border-radius: 10px;
+  /* margin-bottom: 20px; */
+  margin: auto;
+}
+
+.bgr-header {
+  width: 100%;
+  /* height: auto;
+  margin: auto;  */
+  /* Đặt margin auto để căn giữa bức ảnh */
+  position: absolute;
+  opacity: 0.3;
+}
+
+.introducing {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.buy-and-trade-custom {
+  text-align: center;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 92%;
+  letter-spacing: -5.08px;
+  text-transform: uppercase;
+  margin: 35px 0;
+}
+
+.gamax-delivers-tamper {
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.div-divider {
+  border: none;
+  height: 2px;
+  background: radial-gradient(circle at center, white 0%, black 100%);
+  margin: 30px 0 0;
+}
+
+.divw-layout-blockcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  gap: 27.73px;
+  max-width: 1520.596923828125px;
+}
+
+.heading-2 {
+  align-self: stretch;
+  filter: blur(0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl);
+}
+
+.partners {
+  position: relative;
+  line-height: 27.72px;
+  font-weight: 500;
+  display: inline-block;
+  max-width: 1465.1343994140625px;
+  max-height: 27.719694137573242px;
+}
+
+.agency-lo-icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.feature-parent {
+  align-self: stretch;
+  /* padding: 262px 119px 0; */
+  padding: 150px 119px 0;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 100%;
+}
+
+.divw-layout-blockcontainer {
+  width: 100%;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+
+.feature-icon {
+  opacity: 0.7;
+  position: absolute;
+  object-fit: cover;
+  width: 90%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 27.731px 27.731px 0px 0px;
+  /* background-color: lightgray 0px 0px / 100% 101.552% no-repeat; */
+}
+
+.image-1-icon {
+  width: 100%;
+}
+
+.gama-algorithm {
+  font-size: 62.395px;
+  position: relative;
+  letter-spacing: -2.31px;
+  line-height: 76.25px;
+  display: inline-block;
+  background: linear-gradient(97.76deg, #fff 25%, #d8e6f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+}
+
+.transforming-trading-dynamics {
+  margin: 45px 0;
+  width: 100%;
+  position: relative;
+  max-width: 538.4484252929688px;
+  z-index: 1;
+  color: #afafaf;
+  font-size: 23.109px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.center-col {
+  align-self: center !important;
+  display: grid;
+  justify-content: center;
+}
+
+.launch-app {
+  position: relative;
+  color: var(
+    --cryptomatictemplate_webflow_io_home-pages_home-v2_1665x772_default-Nero,
+    #fff
+  );
+  text-align: center;
+  font-size: 20.798px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23.109px;
+  background: linear-gradient(97.76deg, #fff 25%, #d8e6f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 538.4484252929688px;
+  z-index: 1;
+  /* 111.111% */
+}
+
+.btn-launch {
+  position: relative;
+  border-radius: 110.925px;
+  border: 1.155px solid
+    var(
+      --cryptomatictemplate_webflow_io_home-pages_home-v2_1665x772_default-Linear-Shuttle-Gray-Cod-Gray-Linear-Nero-Nero,
+      #566070
+    );
+  background: var(
+    --cryptomatictemplate_webflow_io_home-pages_home-v1_1665x772_default-Linear-Shuttle-Gray-Cod-Gray,
+    linear-gradient(107deg, #566070 15%, #060606 100%)
+  );
+  display: inline-flex;
+  padding: 13.866px 27.731px;
+  align-items: flex-start;
+}
+
+.btn-comming {
+  position: relative;
+  background: black;
+  display: flex;
+  height: 50.841px;
+  padding: 13.866px 27.731px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 110.925px;
+  border: 1.155px solid linear-gradient(white, black);
+}
+.footer-b-g-shape-cryptomat {
+  text-align: center;
+}
+.innovative-solutions-hub {
+  font-size: 55.462px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 76.249px; /* 137.479% */
+  letter-spacing: -2.311px;
+  background: linear-gradient(94deg, #fff 25%, #d8e6f7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gamaxs-complete-suite {
+  margin-top: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 23.109px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 32.353px */
+}
+.d-icons-rocket {
+  width: 100%;
+}
+.feature-icon1 {
+  position: absolute;
+  margin: 0 !important;
+  height: 100%;
+  width: 95%;
+  right: 1px;
+  bottom: 0.1px;
+  border-radius: 0 0 27.73px 27.73px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ellipse {
+  position: absolute;
+  height: 87.9%;
+  width: 87.9%;
+  top: 6.07%;
+  right: 5.89%;
+  bottom: 6.03%;
+  left: 6.21%;
+  border-radius: 1155.47px;
+  background: linear-gradient(107.26deg, #566070 15%, rgba(6, 6, 6, 0));
+}
+.ellipse-parent {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+}
+.d-icons-rocket {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: -0.15%;
+  bottom: 0;
+  left: 0.15%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.feature-parent-solution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-18xl) var(--padding-18xl) var(--padding-17xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-48xl);
+  max-width: 100%;
+  padding: 30px 40px;
+}
+.our-seasoned-experts {
+  align-self: stretch;
+  position: relative;
+  line-height: 140%;
+  z-index: 1;
+  color: #afafaf;
+  text-align: center;
+  font-size: 20.798px;
+  font-style: normal;
+  font-weight: 400;
+}
+.strategic-insight-consulting-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-11xl);
+}
+.strategic-insight-consulting1 {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  width: 100%;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 92%;
+  z-index: 1;
+  /* margin-bottom: 30px; */
+  margin: 60px 0 30px;
+}
+
+.connect-frame {
+  margin-top: 150px;
+  text-align: center;
+  width: 100%;
+}
+.lets-connect-and {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 76.249px; /* 137.479% */
+  /* letter-spacing: -2.311px; */
+  background: linear-gradient(94deg, #fff 25%, #d8e6f7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* margin-bottom: 10px; */
+}
+
+.ready-to-take {
+  color: #afafaf;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 32.353px */
+  padding: 0px 27%;
+}
+/* .frame-parent {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-28xl);
+  text-align: center;
+  font-size: var(--font-size-18xl);
+  color: var(
+    --cryptomatictemplate-webflow-io-home-pages-home-v2-1665x772-default-nero
+  );
+} */
+.email-c-icon {
+  position: relative;
+  width: 73.9px;
+  height: 73.9px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.contact-card,
+.drop-us-a-line-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.drop-us-a-line-parent {
+  gap: var(--gap-3xs);
+}
+.drop-us-a {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 36.975px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 92%; /* 34.017px */
+  letter-spacing: -0.739px;
+}
+.contact-card {
+  flex: 1;
+  border-radius: 32.35px;
+  align-items: center;
+  padding: var(--padding-37xl) var(--padding-18xl) var(--padding-44xl);
+  box-sizing: border-box;
+  gap: var(--gap-37xl);
+  background-image: url(public/contact-card@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+  margin: 0 15px;
+}
+.reach-out-and {
+  color: #fff;
+  text-align: center;
+  font-size: 20.798px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 29.118px */
+}
+
+.form-parent {
+  display: flex;
+}
+.form-parent {
+  margin-top: 50px;
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-lg);
+  text-align: left;
+  font-size: var(--font-size-36xl-5);
+}
+.footer-icon {
+  width: 100%;
+}
+.h4-paragraph {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 18.49px;
+  max-width: 462.1875px;
+}
+.connect-with-us {
+  width: 100%;
+  font-weight: 600;
+  display: inline-block;
+  color: #fff;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 92%; /* 51.025px */
+  letter-spacing: -1.109px;
+}
+.your-inquiries-ideas {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 500;
+  color: var(--color-darkgray);
+}
+.form-inputs-button {
+  margin: 50px 0;
+}
+.email,
+.johnandersongmailcom {
+  font-weight: 500;
+  font-size: var(--font-size-lg-5);
+  position: relative;
+  line-height: 140%;
+  text-align: left;
+}
+.email {
+  align-self: stretch;
+  color: var(
+    --cryptomatictemplate-webflow-io-home-pages-home-v2-1665x772-default-nero
+  );
+}
+.johnandersongmailcom {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: var(
+    --cryptomatictemplate-webflow-io-home-pages-home-v1-1665x772-default-linear-shuttle-gray-cod-gray
+  );
+  flex: 1;
+  color: var(
+    --cryptomatictemplate-webflow-io-home-pages-home-v2-1665x772-default-linear-shuttle-gray-cod-gray-linear-nero-nero
+  );
+  display: inline-block;
+  max-width: 100%;
+}
+.input,
+.input-field {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.input-field {
+  border-radius: 13.87px;
+  border: 1.2px solid var(--white-opacity-30);
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  /* padding: 23.109375px var(--padding-9xl) 23.109375px 27.73124885559082px; */
+}
+.input {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9.24px;
+  flex-shrink: 0;
+}
+.email1,
+.johnandersongmailcom1 {
+  font-weight: 500;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-lg-5);
+  position: relative;
+  line-height: 140%;
+  text-align: left;
+}
+.email1 {
+  align-self: stretch;
+  color: var(
+    --cryptomatictemplate-webflow-io-home-pages-home-v2-1665x772-default-nero
+  );
+}
+.johnandersongmailcom1 {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: var(
+    --cryptomatictemplate-webflow-io-home-pages-home-v1-1665x772-default-linear-shuttle-gray-cod-gray
+  );
+  flex: 1;
+  color: var(
+    --cryptomatictemplate-webflow-io-home-pages-home-v2-1665x772-default-linear-shuttle-gray-cod-gray-linear-nero-nero
+  );
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+}
+.input-field1,
+.input1 {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.input-field1 {
+  border-radius: 13.87px;
+  border: 1.2px solid var(--white-opacity-30);
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  padding: 23.109375px var(--padding-9xl) 23.109375px 27.73124885559082px;
+}
+.input1 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9.24px;
+  flex-shrink: 0;
+}
+.email2,
+.johnandersongmailcom2 {
+  font-weight: 500;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-lg-5);
+  position: relative;
+  line-height: 140%;
+  text-align: left;
+}
+.email2 {
+  align-self: stretch;
+  color: var(
+    --cryptomatictemplate-webflow-io-home-pages-home-v2-1665x772-default-nero
+  );
+}
+.johnandersongmailcom2 {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background-color: var(
+    --cryptomatictemplate-webflow-io-home-pages-home-v1-1665x772-default-linear-shuttle-gray-cod-gray
+  );
+  flex: 1;
+  color: var(
+    --cryptomatictemplate-webflow-io-home-pages-home-v2-1665x772-default-linear-shuttle-gray-cod-gray-linear-nero-nero
+  );
+  display: inline-block;
+  max-width: 100%;
+}
+.input-field2,
+.input2,
+.inputs {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.input-field2 {
+  border-radius: 13.87px;
+  border: 1.2px solid var(--white-opacity-30);
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  padding: 23.109375px var(--padding-9xl) 23.109375px 27.73124885559082px;
+}
+.input2,
+.inputs {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9.24px;
+  flex-shrink: 0;
+}
+.inputs {
+  gap: 32.35px;
+}
+.send-message {
+  margin-top: 40px;
+}
+.divider-rectangle {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 129px 0 133px var(--padding-mid);
+  box-sizing: border-box;
+  position: relative;
+}
+.footer {
+  text-align: center;
+  width: 100%;
+}
+.text-wrapper {
+  font-size: 16px;
+}
+.frame-4 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32.35px;
+  position: relative;
+}
+.center-col-footer {
+  display: grid;
+  align-content: center;
+}
+.copyright {
+  display: flex;
+  /* align-items: flex-start; */
+  justify-content: center;
+  /* gap: 13.87px; */
+  padding: 27.73px 0 50px !important;
+  /* width: 100%; */
+  /* margin: 0 5%; */
+  /* border-top: 1.155px solid var(--Accent-Opacity-10, #1F2B15); */
+}
+.footer-row {
+  padding: 3% 0;
+  margin: 0 5%;
+  /* border-bottom: 1px solid; */
+  border-bottom: 1.155px solid var(--Accent-Opacity-10, #1f2b15);
+}
+.text-wrapper-23 {
+  position: relative;
+  flex: 1;
+  margin-top: -1.16px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16.2px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 22.6px;
+}
+.social-icon {
+  display: flex;
+  width: 46.22px;
+  height: 46.22px;
+  align-items: center;
+  justify-content: center;
+  padding: 18.49px;
+  position: relative;
+  border-radius: 110.92px;
+  /* border: 1.16px solid; */
+  border-color: transparent;
+  border-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0)
+    )
+    1;
+  background: linear-gradient(180deg, rgb(86, 96, 112) 15%, rgb(6, 6, 6) 100%);
+}
+.socials {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9.24px;
+}
+.linked-in-wrapper {
+  display: flex;
+  width: 46.22px;
+  height: 46.22px;
+  align-items: center;
+  justify-content: center;
+  padding: 18.49px 9.24px;
+  position: relative;
+  border-radius: 110.92px;
+  /* border: 1.16px solid; */
+  border-color: transparent;
+  border-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0)
+    )
+    1;
+  background: linear-gradient(180deg, rgb(86, 96, 112) 15%, rgb(6, 6, 6) 100%);
+}
+
+.gama-network-section {
+  margin: 10rem 0;
+}
+.gama-lending-section {
+  margin-bottom: 10rem;
+}
+
+.display-mb {
+  display: none;
+}
+.gama-exchange-section {
+  padding-bottom: 10%;
+}
+
+/* ============================== media =========================== */
+/* @media screen and (max-width: 600px) {
+    .introducing {
+        font-size: 0.8rem;
+      }
+      .buy-and-trade-custom {
+        font-size: 45px;
+        margin: 30px 0;
+        letter-spacing: revert;
+      }
+      .gamax-delivers-tamper {
+        font-size: 0.8rem;
+      }
+  } */
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width:200px)and (max-device-width:480px) {
+    /* Styles */
+    .send-message {
+      margin-top: 40px;
+      padding: 10px !important;
+  }
+    .collapse ul.navbar-nav > li > a {
+      font-size: 16px;
+      line-height: unset;
+    }
+    .btn{
+      padding: 0;
+      
+    }
+    .lang{
+      font-size: 14px !important;
+    }
+    .introducing {
+      font-size: 0.5rem;
+    }
+  
+    .buy-and-trade-custom {
+      font-size: 20px;
+      margin: 25px 0;
+      letter-spacing: revert;
+    }
+  
+    .gamax-delivers-tamper {
+      font-size: 0.8rem;
+    }
+    .gama-algorithm {
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+    .transforming-trading-dynamics {
+      margin: 0 0 30px;
+      font-size: 14px;
+    }
+    .btn-launch,
+    .btn-comming {
+      padding: 10px 20px;
+    }
+    .launch-app {
+      font-size: 12px;
+    }
+    .gama-network-section {
+      margin: 5rem 0;
+    }
+    .gama-lending-section {
+      margin-bottom: 5rem;
+    }
+  
+    .display-mb {
+      display: block;
+    }
+    .display-lg {
+      display: none;
+    }
+    .innovative-solutions-hub {
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 40px;
+    }
+    .gamaxs-complete-suite {
+      margin: 0;
+      font-size: 12px;
+      padding: 0 18%;
+    }
+    .ellipse-parent {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      z-index: 1;
+    }
+    .strategic-insight-consulting1{
+      line-height: revert;
+      letter-spacing:0;
+      margin:0;
+      font-size:17px;
+    }
+    .our-seasoned-experts{
+      font-size: 14px;
+    }
+    .market-solution{
+      margin: 10% 0;
+    }
+    .lets-connect-and{
+      font-size: 18px;
+    }
+    .connect-frame{
+      margin:0
+    }
+    .ready-to-take{
+      padding: 0px 15%;
+    }
+    .contact-card{
+      flex: none;
+      margin: 0;
+    }
+    .drop-us-a{
+      font-size: 18px;
+    }
+    .reach-out-and{
+      font-size: 14px;
+    }
+    .frame-4{
+      display: block;
+    }
+    .footer-row{
+      line-height: 40px;
+      display: inline-block !important;
+    }
+    .center-col{
+      text-align: center;
+    }
+    .btn-comming {
+      display: inline;
+    }
+    .divider-rectangle{
+      padding: 50px;
+    }
+    .feature-parent {
+      padding: 100px 70px 0;
+    }
+  }
+
+
+/* Smartphones */
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+  /* CSS rules for small screens */
+  .collapse ul.navbar-nav > li > a {
+    font-size: 16px;
+    line-height: unset;
+  }
+  .btn{
+    /* padding: 0; */
+    padding: 10px;
+  }
+  .lang{
+    font-size: 14px !important;
+  }
+  .introducing {
+    font-size: 0.8rem;
+  }
+
+  .buy-and-trade-custom {
+    font-size: 35px;
+    margin: 25px 0;
+    letter-spacing: revert;
+  }
+
+  .gamax-delivers-tamper {
+    font-size: 0.8rem;
+  }
+  .gama-algorithm {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .transforming-trading-dynamics {
+    margin: 0 0 30px;
+    font-size: 14px;
+  }
+  .btn-launch,
+  .btn-comming {
+    padding: 10px 20px;
+  }
+  .launch-app {
+    font-size: 12px;
+  }
+  .gama-network-section {
+    margin: 5rem 0;
+  }
+  .gama-lending-section {
+    margin-bottom: 5rem;
+  }
+
+  .display-mb {
+    display: block;
+  }
+  .display-lg {
+    display: none;
+  }
+  .innovative-solutions-hub {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+  .gamaxs-complete-suite {
+    margin: 0;
+    font-size: 12px;
+    padding: 0 18%;
+  }
+  .ellipse-parent {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+  }
+  .strategic-insight-consulting1{
+    line-height: revert;
+    letter-spacing:0;
+    margin:0;
+    font-size:17px;
+  }
+  .our-seasoned-experts{
+    font-size: 14px;
+  }
+  .market-solution{
+    margin: 10% 0;
+  }
+  .lets-connect-and{
+    font-size: 18px;
+  }
+  .connect-frame{
+    margin:0
+  }
+  .ready-to-take{
+    padding: 0px 15%;
+  }
+  .contact-card{
+    flex: none;
+    margin: 0;
+  }
+  .drop-us-a{
+    font-size: 18px;
+  }
+  .reach-out-and{
+    font-size: 14px;
+  }
+  .frame-4{
+    display: block;
+  }
+  .footer-row{
+    line-height: 40px;
+    display: inline-block !important;
+  }
+  .center-col{
+    text-align: center;
+  }
+  .btn-comming {
+    display: inline;
+  }
+  .divider-rectangle{
+    padding: 50px;
+  }
+  .feature-parent {
+    padding: 100px 70px 0;
+  }
+}
+
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* CSS rules for medium-sized screens */
+  .introducing {
+    font-size: 1.2rem;
+  }
+  .collapse ul.navbar-nav > li > a {
+    font-size: 16px;
+    line-height: unset;
+  }
+  .btn{
+    padding: 10px;
+    
+  }
+  .lang{
+    font-size: 14px !important;
+  }
+  .gamax-delivers-tamper {
+    font-size: 1.2rem;
+  }
+
+  .buy-and-trade-custom {
+    font-size: 60px;
+    margin: 35px 0;
+    letter-spacing: revert;
+  }
+
+  .text-container {
+    margin: auto;
+    padding: 0 10%;
+  }
+}
+
+/* laptop */
+/* CSS rules for large screens */
+/* @media only screen and (min-width: 992px) and (max-width: 1199px) { */
+@media only screen and (min-width: 900px) and (max-width: 1199px) {
+  .introducing {
+    font-size: 1.5rem;
+  }
+
+  .gamax-delivers-tamper {
+    font-size: 1.5rem;
+  }
+
+  .text-container {
+    margin-top: 50px;
+  }
+
+  .buy-and-trade-custom {
+    font-size: 100px;
+    margin: 45px 0;
+    letter-spacing: revert;
+  }
+  .gamax-delivers-tamper {
+    font-size: 0.8rem;
+  }
+  .gama-algorithm {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .transforming-trading-dynamics {
+    margin: 0 0 30px;
+    font-size: 14px;
+  }
+  .btn-launch,
+  .btn-comming {
+    padding: 10px 20px;
+  }
+  .launch-app {
+    font-size: 12px;
+  }
+  .gama-network-section {
+    margin: 5rem 0;
+  }
+  .gama-lending-section {
+    margin-bottom: 5rem;
+  }
+  .innovative-solutions-hub {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+  .gamaxs-complete-suite {
+    margin: 0;
+    font-size: 12px;
+    padding: 0 18%;
+  }
+  .ellipse-parent {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+  }
+  .strategic-insight-consulting1{
+    line-height: revert;
+    letter-spacing:0;
+    margin:0;
+    font-size:17px;
+  }
+  .our-seasoned-experts{
+    font-size: 14px;
+  }
+  .lets-connect-and{
+    font-size: 18px;
+  }
+  .connect-frame{
+    margin:0
+  }
+  .ready-to-take{
+    padding: 0px 15%;
+  }
+  .drop-us-a{
+    font-size: 18px;
+  }
+  .reach-out-and{
+    font-size: 14px;
+  }
+  .frame-4{
+    display: block;
+  }
+  .footer-row{
+    line-height: 40px;
+    display: inline-block !important;
+  }
+  .center-col{
+    text-align: center;
+  }
+  .btn-comming {
+    display: inline;
+  }
+  .divider-rectangle{
+    padding: 50px;
+  }
+  .feature-parent {
+    padding: 100px 70px 0;
+  }
+}
+
+/* desktop pc */
+@media only screen and (min-width: 1200px) {
+  .introducing {
+    font-size: 1.8rem;
+  }
+
+  .buy-and-trade-custom {
+    font-size: 80px;
+    margin: 40px 0;
+    letter-spacing: revert;
+  }
+
+  .text-container {
+    margin-top: 100px;
+    padding: 0 20%;
+  }
+}
