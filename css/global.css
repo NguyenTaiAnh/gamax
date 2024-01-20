@@ -1202,7 +1202,7 @@ body, html {
 /* laptop */
 /* CSS rules for large screens */
 /* @media only screen and (min-width: 992px) and (max-width: 1199px) { */
-@media only screen and (min-width: 900px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .introducing {
     font-size: 1.5rem;
   }
@@ -1289,8 +1289,8 @@ body, html {
     margin: 10px 0;
   }
   .footer-row{
-    line-height: 40px;
-    /* display: block !important; */
+    /* line-height: 40px; */
+    display: block !important;
   }
   .center-col-footer{
     display: contents;
