@@ -1186,6 +1186,17 @@ body, html {
     margin: auto;
     padding: 0 10%;
   }
+  .footer-row{
+    line-height: 40px;
+    display: block !important;
+  }
+  .center-col-footer{
+    display: contents;
+  }
+  .frame-4{
+    /* display: block; */
+    margin: 10px 0;
+  }
 }
 
 /* laptop */
@@ -1274,11 +1285,15 @@ body, html {
     font-size: 14px;
   }
   .frame-4{
-    display: block;
+    /* display: block; */
+    margin: 10px 0;
   }
   .footer-row{
     line-height: 40px;
-    display: inline-block !important;
+    /* display: block !important; */
+  }
+  .center-col-footer{
+    display: contents;
   }
   .center-col{
     text-align: center;
