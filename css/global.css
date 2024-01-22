@@ -364,8 +364,8 @@ body, html {
   position: absolute;
   top: -2px; bottom: -2px;
   left: -2px; right: -2px;
-  /* background: linear-gradient(60deg, #566070, #ffffff) border-box; */
-  background: linear-gradient(340deg, #566070, #ffffff) border-box;
+  background: linear-gradient(60deg, #566070, #ffffff) border-box;
+  /* background: linear-gradient(340deg, #566070, #ffffff) border-box; */
   content: '';
   z-index: -1;
   border-radius: 110.925px;
