@@ -875,6 +875,8 @@ html {
   background: linear-gradient(180deg, rgb(86, 96, 112) 15%, rgb(6, 6, 6) 100%);
 }
 .socials {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -913,7 +915,12 @@ html {
 .gama-exchange-section {
   padding-bottom: 10%;
 }
-
+.dropdown-toggle::after {
+  display:none;
+}
+.bgr-black{
+  background-color: black !important;
+}
 /* ============================== media =========================== */
 /* @media screen and (max-width: 600px) {
     .introducing {
@@ -930,6 +937,14 @@ html {
   } */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 200px) and (max-device-width: 480px) {
+  .dropdown{
+    display: contents;
+  }
+  .nav-dropdown-lang{
+    display: flex;
+    justify-content: end;
+  }
+  
   /* Styles */
   .send-message {
     margin-top: 40px;
@@ -946,7 +961,8 @@ html {
     line-height: unset;
   }
   .btn {
-    padding: 0;
+    /* padding: 0; */
+    padding: 5px 10px;
   }
   .lang {
     font-size: 14px !important;
@@ -967,19 +983,19 @@ html {
     font-size: 0.8rem;
   }
   .gama-algorithm {
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 0;
   }
   .transforming-trading-dynamics {
     margin: 0 0 30px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .btn-launch,
   .btn-comming {
     padding: 10px 20px;
   }
   .launch-app {
-    font-size: 12px;
+    font-size: 16px;
   }
   .gama-network-section {
     margin: 5rem 0;
@@ -1064,6 +1080,13 @@ html {
 
 /* Smartphones */
 @media only screen and (min-width: 400px) and (max-width: 767px) {
+  .dropdown{
+    display: contents;
+  }
+  .nav-dropdown-lang{
+    display: flex;
+    justify-content: end;
+  }
   /* CSS rules for small screens */
   .btn-mb-display {
     align-items: flex-end;
@@ -1096,19 +1119,19 @@ html {
     font-size: 0.8rem;
   }
   .gama-algorithm {
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 0;
   }
   .transforming-trading-dynamics {
     margin: 0 0 30px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .btn-launch,
   .btn-comming {
     padding: 10px 20px;
   }
   .launch-app {
-    font-size: 12px;
+    font-size: 16px;
   }
   .gama-network-section {
     margin: 5rem 0;
@@ -1193,6 +1216,13 @@ html {
 
 /* ipad */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .dropdown{
+    display: contents;
+  }
+  .nav-dropdown-lang{
+    display: flex;
+    justify-content: end;
+  }
   .btn-mb-display {
     align-items: flex-end;
   }
@@ -1265,19 +1295,19 @@ html {
     font-size: 0.8rem;
   }
   .gama-algorithm {
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 0;
   }
   .transforming-trading-dynamics {
     margin: 0 0 30px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .btn-launch,
   .btn-comming {
     padding: 10px 20px;
   }
   .launch-app {
-    font-size: 12px;
+    font-size: 16px;
   }
   .gama-network-section {
     margin: 5rem 0;

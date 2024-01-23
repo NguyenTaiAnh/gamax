@@ -70,11 +70,21 @@
                 </li>
               </ul>
               <ul class="navbar-nav ms-auto d-lg-inline-flex btn-mb-display">
-                <li class="nav-item mx-2">
-                  <button class="btn">
-                    <a class="nav-link mx-2 lang" href="#">Tiếng Việt</a>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    English
                   </button>
-                </li>
+                  <ul class="dropdown-menu dropdown-menu-end bgr-black" aria-labelledby="dropdownMenuButton1">
+                      <li class="nav-item mx-2 nav-dropdown-lang">
+                        <button class="btn" id="vi">
+                          <a class="nav-link mx-2 lang" href="#" onclick="showGenre(this, 0)">Tiếng Việt</a>
+                        </button>
+                        <button class="btn" style="display: none;" id="en" >
+                          <a class="nav-link mx-2 lang" href="#" onclick="showGenre(this, 1)">English</a>
+                        </button>
+                      </li>
+                  </ul>
+                </div>
               </ul>
             </div>
           </div>
@@ -186,7 +196,9 @@
                 <div class="group-wrapper">
                   <div class="group">
                     <button class="btn-launch">
-                      <div class="launch-app">Launch app</div>
+                      <div class="launch-app">
+                        <a class="nav-link mx-2" href="#">Launch app</a>
+                      </div>
                     </button>
                   </div>
                 </div>
@@ -560,20 +572,26 @@
                   </div>
                   <div
                     class="col-12 col-sm-12 col-md-12 col-lg-3 center-col-footer"
-                    style="justify-content: end;"
+                    style="justify-content: end; position: relative;"
                   >
                     <div class="socials">
                       <div class="social-icon">
-                        <img class="img-3" src="assets/images/facebook.svg" />
+                        <a class="nav-link mx-2" href="#">
+                          <img class="img-3" src="assets/images/facebook.svg" />
+                        </a>
                       </div>
                       <div class="linked-in-wrapper">
-                        <img
-                          class="linked-in"
-                          src="assets/images/linkedin.svg"
-                        />
+                        <a class="nav-link mx-2" href="#">
+                          <img
+                            class="linked-in"
+                            src="assets/images/linkedin.svg"
+                          />
+                        </a>
                       </div>
                       <div class="social-icon">
-                        <img class="img-3" src="assets/images/twitter.svg" />
+                        <a class="nav-link mx-2" href="#">
+                          <img class="img-3" src="assets/images/twitter.svg" />
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -625,14 +643,21 @@
         }
       }
 
-      // Nghe sự kiện load của trang và gọi hàm
       window.addEventListener('load', function() {
         setOfferTextHeight();
-        // Hoặc sử dụng sự kiện load cho hình ảnh
-        // document.getElementById('headerImage').addEventListener('load', setOfferTextHeight);
       });
-      // Gọi hàm khi kích thước màn hình thay đổi
       window.addEventListener("resize", setOfferTextHeight);
+      function showGenre(item, type) {
+        console.log("first", item);
+        document.getElementById("dropdownMenuButton1").innerHTML = item.innerHTML;
+        if(type == 0){
+          document.getElementById("vi").style.display = "none";
+          document.getElementById("en").style.display = "block";
+        }else{
+          document.getElementById("en").style.display = "none";
+          document.getElementById("vi").style.display = "block";
+        }
+      }
     </script>
   </body>
 </html>
