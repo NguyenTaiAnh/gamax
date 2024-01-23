@@ -90,7 +90,8 @@ body {
   font-family: Inter !important;
   /* overflow-x: hidden; */
 }
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
@@ -98,7 +99,7 @@ body, html {
   width: 100%;
   height: 100%;
 }
-.container{
+.container {
   padding: 0 !important;
 }
 .gamax-icon {
@@ -224,7 +225,10 @@ body, html {
   gap: 27.73px;
   max-width: 1520.596923828125px;
 }
-
+.footer-menu-item{
+  position: relative;
+  z-index: 1;
+}
 .heading-2 {
   align-self: stretch;
   filter: blur(0);
@@ -354,19 +358,21 @@ body, html {
 
 .btn-comming {
   position: relative;
-    border: 4px solid transparent;
-    border-radius: 110.925px;
-    background: black;
-    background-clip: padding-box;
-    padding: 13.866px 27.731px;
+  border: 4px solid transparent;
+  border-radius: 110.925px;
+  background: black;
+  background-clip: padding-box;
+  padding: 13.866px 27.731px;
 }
 .btn-comming::after {
   position: absolute;
-  top: -2px; bottom: -2px;
-  left: -2px; right: -2px;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
   background: linear-gradient(60deg, #566070, #ffffff) border-box;
   /* background: linear-gradient(340deg, #566070, #ffffff) border-box; */
-  content: '';
+  content: "";
   z-index: -1;
   border-radius: 110.925px;
 }
@@ -922,146 +928,158 @@ body, html {
         font-size: 0.8rem;
       }
   } */
-  /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width:200px)and (max-device-width:480px) {
-    /* Styles */
-    .send-message {
-      margin-top: 40px;
-      padding: 10px !important;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 200px) and (max-device-width: 480px) {
+  /* Styles */
+  .send-message {
+    margin-top: 40px;
+    padding: 10px !important;
   }
-    .collapse ul.navbar-nav > li > a {
-      font-size: 16px;
-      line-height: unset;
-    }
-    .btn{
-      padding: 0;
-      
-    }
-    .lang{
-      font-size: 14px !important;
-    }
-    .introducing {
-      font-size: 0.5rem;
-    }
-  
-    .buy-and-trade-custom {
-      font-size: 20px;
-      margin: 25px 0;
-      letter-spacing: revert;
-    }
-  
-    .gamax-delivers-tamper {
-      font-size: 0.8rem;
-    }
-    .gama-algorithm {
-      font-size: 16px;
-      letter-spacing: 0;
-    }
-    .transforming-trading-dynamics {
-      margin: 0 0 30px;
-      font-size: 14px;
-    }
-    .btn-launch,
-    .btn-comming {
-      padding: 10px 20px;
-    }
-    .launch-app {
-      font-size: 12px;
-    }
-    .gama-network-section {
-      margin: 5rem 0;
-    }
-    .gama-lending-section {
-      margin-bottom: 5rem;
-    }
-  
-    .display-mb {
-      display: block;
-    }
-    .display-lg {
-      display: none;
-    }
-    .innovative-solutions-hub {
-      font-size: 16px;
-      letter-spacing: 0;
-      line-height: 40px;
-    }
-    .gamaxs-complete-suite {
-      margin: 0;
-      font-size: 12px;
-      padding: 0 18%;
-    }
-    .ellipse-parent {
-      position: relative;
-      width: 200px;
-      height: 200px;
-      z-index: 1;
-    }
-    .strategic-insight-consulting1{
-      line-height: revert;
-      letter-spacing:0;
-      margin:0;
-      font-size:17px;
-    }
-    .our-seasoned-experts{
-      font-size: 14px;
-    }
-    .market-solution{
-      margin: 10% 0;
-    }
-    .lets-connect-and{
-      font-size: 18px;
-    }
-    .connect-frame{
-      margin:0
-    }
-    .ready-to-take{
-      padding: 0px 15%;
-    }
-    .contact-card{
-      flex: none;
-      margin: 0;
-    }
-    .drop-us-a{
-      font-size: 18px;
-    }
-    .reach-out-and{
-      font-size: 14px;
-    }
-    .frame-4{
-      display: block;
-    }
-    .footer-row{
-      line-height: 40px;
-      display: inline-block !important;
-    }
-    .center-col{
-      text-align: center;
-    }
-    .btn-comming {
-      display: inline;
-    }
-    .divider-rectangle{
-      padding: 50px;
-    }
-    .feature-parent {
-      padding: 100px 70px 0;
-    }
+  .btn-mb-display {
+    align-items: flex-end;
   }
-
-
-/* Smartphones */
-@media only screen and (min-width: 400px) and (max-width: 767px) {
-  /* CSS rules for small screens */
+  .nav-mb-display {
+    text-align: right;
+  }
   .collapse ul.navbar-nav > li > a {
     font-size: 16px;
     line-height: unset;
   }
-  .btn{
+  .btn {
+    padding: 0;
+  }
+  .lang {
+    font-size: 14px !important;
+  }
+  .introducing {
+    /* font-size: 0.5rem; */
+    font-size: 0.8rem;
+  }
+
+  .buy-and-trade-custom {
+    /* font-size: 20px; */
+    font-size: 2rem;
+    margin: 25px 0;
+    letter-spacing: revert;
+  }
+
+  .gamax-delivers-tamper {
+    font-size: 0.8rem;
+  }
+  .gama-algorithm {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .transforming-trading-dynamics {
+    margin: 0 0 30px;
+    font-size: 14px;
+  }
+  .btn-launch,
+  .btn-comming {
+    padding: 10px 20px;
+  }
+  .launch-app {
+    font-size: 12px;
+  }
+  .gama-network-section {
+    margin: 5rem 0;
+  }
+  .gama-lending-section {
+    margin-bottom: 5rem;
+  }
+
+  .display-mb {
+    display: block;
+  }
+  .display-lg {
+    display: none;
+  }
+  .innovative-solutions-hub {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 40px;
+  }
+  .gamaxs-complete-suite {
+    margin: 0;
+    font-size: 12px;
+    padding: 0 18%;
+  }
+  .ellipse-parent {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+  }
+  .strategic-insight-consulting1 {
+    line-height: revert;
+    letter-spacing: 0;
+    margin: 0;
+    font-size: 17px;
+  }
+  .our-seasoned-experts {
+    font-size: 14px;
+  }
+  .market-solution {
+    margin: 10% 0;
+  }
+  .lets-connect-and {
+    font-size: 18px;
+  }
+  .connect-frame {
+    margin: 0;
+  }
+  .ready-to-take {
+    padding: 0px 15%;
+  }
+  .contact-card {
+    flex: none;
+    margin: 0;
+  }
+  .drop-us-a {
+    font-size: 18px;
+  }
+  .reach-out-and {
+    font-size: 14px;
+  }
+  .frame-4 {
+    display: block;
+  }
+  .footer-row {
+    line-height: 40px;
+    display: inline-block !important;
+  }
+  .center-col {
+    text-align: center;
+  }
+  .btn-comming {
+    display: inline;
+  }
+  .divider-rectangle {
+    padding: 50px;
+  }
+  .feature-parent {
+    padding: 100px 70px 0;
+  }
+}
+
+/* Smartphones */
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+  /* CSS rules for small screens */
+  .btn-mb-display {
+    align-items: flex-end;
+  }
+  .nav-mb-display {
+    text-align: right;
+  }
+  .collapse ul.navbar-nav > li > a {
+    font-size: 16px;
+    line-height: unset;
+  }
+  .btn {
     /* padding: 0; */
     padding: 10px;
   }
-  .lang{
+  .lang {
     font-size: 14px !important;
   }
   .introducing {
@@ -1121,51 +1139,51 @@ body, html {
     height: 200px;
     z-index: 1;
   }
-  .strategic-insight-consulting1{
+  .strategic-insight-consulting1 {
     line-height: revert;
-    letter-spacing:0;
-    margin:0;
-    font-size:17px;
+    letter-spacing: 0;
+    margin: 0;
+    font-size: 17px;
   }
-  .our-seasoned-experts{
+  .our-seasoned-experts {
     font-size: 14px;
   }
-  .market-solution{
+  .market-solution {
     margin: 10% 0;
   }
-  .lets-connect-and{
+  .lets-connect-and {
     font-size: 18px;
   }
-  .connect-frame{
-    margin:0
+  .connect-frame {
+    margin: 0;
   }
-  .ready-to-take{
+  .ready-to-take {
     padding: 0px 15%;
   }
-  .contact-card{
+  .contact-card {
     flex: none;
     margin: 0;
   }
-  .drop-us-a{
+  .drop-us-a {
     font-size: 18px;
   }
-  .reach-out-and{
+  .reach-out-and {
     font-size: 14px;
   }
-  .frame-4{
+  .frame-4 {
     display: block;
   }
-  .footer-row{
+  .footer-row {
     line-height: 40px;
     display: inline-block !important;
   }
-  .center-col{
+  .center-col {
     text-align: center;
   }
   .btn-comming {
     display: inline;
   }
-  .divider-rectangle{
+  .divider-rectangle {
     padding: 50px;
   }
   .feature-parent {
@@ -1175,6 +1193,12 @@ body, html {
 
 /* ipad */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .btn-mb-display {
+    align-items: flex-end;
+  }
+  .nav-mb-display {
+    text-align: right;
+  }
   /* CSS rules for medium-sized screens */
   .introducing {
     font-size: 1.2rem;
@@ -1183,11 +1207,10 @@ body, html {
     font-size: 16px;
     line-height: unset;
   }
-  .btn{
+  .btn {
     padding: 10px;
-    
   }
-  .lang{
+  .lang {
     font-size: 14px !important;
   }
   .gamax-delivers-tamper {
@@ -1204,14 +1227,14 @@ body, html {
     margin: auto;
     padding: 0 10%;
   }
-  .footer-row{
+  .footer-row {
     line-height: 40px;
     display: block !important;
   }
-  .center-col-footer{
+  .center-col-footer {
     display: contents;
   }
-  .frame-4{
+  .frame-4 {
     /* display: block; */
     margin: 10px 0;
   }
@@ -1278,48 +1301,48 @@ body, html {
     height: 200px;
     z-index: 1;
   }
-  .strategic-insight-consulting1{
+  .strategic-insight-consulting1 {
     line-height: revert;
-    letter-spacing:0;
-    margin:0;
-    font-size:17px;
+    letter-spacing: 0;
+    margin: 0;
+    font-size: 17px;
   }
-  .our-seasoned-experts{
+  .our-seasoned-experts {
     font-size: 14px;
   }
-  .lets-connect-and{
+  .lets-connect-and {
     font-size: 18px;
   }
-  .connect-frame{
-    margin:0
+  .connect-frame {
+    margin: 0;
   }
-  .ready-to-take{
+  .ready-to-take {
     padding: 0px 15%;
   }
-  .drop-us-a{
+  .drop-us-a {
     font-size: 18px;
   }
-  .reach-out-and{
+  .reach-out-and {
     font-size: 14px;
   }
-  .frame-4{
+  .frame-4 {
     /* display: block; */
     margin: 25px 0;
   }
-  .footer-row{
+  .footer-row {
     /* line-height: 40px; */
     display: block !important;
   }
-  .center-col-footer{
+  .center-col-footer {
     display: contents;
   }
-  .center-col{
+  .center-col {
     text-align: center;
   }
   .btn-comming {
     display: inline;
   }
-  .divider-rectangle{
+  .divider-rectangle {
     padding: 50px;
   }
   .feature-parent {
